@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "name": "gapps-pr2slack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "auth": "gapps auth",
+    "compile": "node compile.js",
+    "deploy": "npm run compile && gapps upload",
+    "init": "gapps init && cp-cli .env.example .env",
+    "start": "npm run deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "name" : "ichigotake",
+    "email" : "ichigotake.san@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "cp-cli": "^1.1.2",
+    "dotenv": "^6.0.0",
+    "ejs": "^2.6.1",
+    "fs-extra": "^7.0.0",
+    "node-google-apps-script": "^1.3.1"
+  }
+}
