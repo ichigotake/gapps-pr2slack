@@ -2,6 +2,8 @@
 
 Post opened Pull Request list to Slack for the specified GitHub owner(orgs or users).
 
+![](./screenshot.png)
+
 ## Usage
 
 ```
